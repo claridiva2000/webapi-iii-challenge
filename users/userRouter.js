@@ -82,7 +82,7 @@ router.delete('/:id', async (req, res) => {
     });
   }
 });
-
+ 
 router.put('/:id', async (req, res) => {
   try {
     const user = await Users.update(req.params.id, req.body);
